@@ -1,0 +1,74 @@
+Example of the content of file that the program could read and store data for:
+
+    S-Market; Hervanta Center; milk; 0.55
+    Prisma; Koivistonkyla; peanut_butter; 2.90
+    S-Market; Hervanta Center; peanut_butter; 3.25
+    S-Market; Print; milk; 2.00
+    S-Market; Hervanta Center; milk; 1.05
+
+
+When the program starts it reads a file named:
+
+    products.txt
+The name of the input file is not asked from the user.
+The program parses the information it reads from the input file and stores it in a Suitable STL data structure. You can decide the actual data structure yourself as long as it follows the guidelines given in the section special requirements .
+
+Once the file has been read and the content stored appears in the memory, the program prints a prompt:
+
+    product search> ␣ 
+After this, every time the program prints the prompt, the user can type any of the following commands:
+quit
+Program ends.
+chains
+Prints all know the chain store names in alphabetical order:
+For example:
+
+      product search> ␣ chains
+      K-citymarket
+      Prism
+      S-market
+      product search> ␣ 
+      
+stores chain_name
+Prints on screen in alphabetical order of the locations of all the stores Belonging to the given store chain.
+For example:
+
+      product search> ␣ stores K-citymarket
+      Lielahti
+      Linnainmaa
+      Print
+      Turtola
+      product search> ␣ 
+      
+cheapest product_name
+Prints out the Cheapest price of the product in all the known stores. Under the price it prints all the store chain and location pairs the where the product can be found at the Cheapest price.
+The output shouldnt be formatted like this:
+
+      product search> ␣ Cheapest milk
+      0.90
+      Prisma Kaleva
+      Prisma Koivistonkyla
+      product search> ␣ 
+      
+Store chain names are in alphabetical order and if there are multiple stores thathave the same Cheapest price for the product they will in turn be in alphabetical sub-order.
+
+The price will be printed with two decimals.
+
+If the product name is unknown, the following message will be printed:
+
+      product search> ␣ Cheapest sausage_milk
+      This product is not available anywhere.
+      product search> ␣ 
+      
+selection chain_name store_location
+The products available at the store Specified will be printed in alphabetical order with the prices.
+for example:
+
+      product search> ␣ selection Prisma Lielahti
+      milk 0.95
+      peanut_butter 2.90
+      product search> ␣ 
+      
+The prices will be printed with two decimals.
+
+When the command is finished the program prints the prompt again and waits for the next command from the user. This will repeat until the user inputs quitthe command.
