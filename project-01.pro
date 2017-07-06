@@ -5,10 +5,12 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     splitter.cpp \
-    storechain.cpp
+    storechain.cpp \
+    storedatahandler.cpp
 
 HEADERS += \
-    splitter.h \
-    storechain.h
+    storedatahandler.hpp \
+    storechain.hpp \
+    splitter.hpp
 
 DISTFILES +=

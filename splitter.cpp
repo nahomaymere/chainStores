@@ -1,4 +1,4 @@
-#include "splitter.h"
+#include "splitter.hpp"
 
 
 const unsigned int SPLIT_ERROR = 0;

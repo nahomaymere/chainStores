@@ -1,12 +1,13 @@
 ﻿
 
-#include "storechain.h"
+#include "storechain.hpp"
 #include <iomanip>
 #include <string>
 #include <sstream>
 using namespace std;
 
 StoreChain::StoreChain(){
+
 }
 StoreChain::StoreChain(string name, string location, Products productsContainer){
    store_name = name;

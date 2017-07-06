@@ -18,6 +18,7 @@ public:
     void setStoreLocation(string);
     void addProductToContainer(string,double);
     void setProductsContainer(Products);
+
     string getStoreName();
     string getStoreLocation();
     Products getProductContainer();
